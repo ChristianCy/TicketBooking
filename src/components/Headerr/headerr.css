@@ -1,0 +1,60 @@
+.Header{
+background-color: skyblue;
+color: rgb(24, 3, 96);
+display: flex;
+justify-content: center;
+
+}
+.headerContainer{
+    width: 100%;
+    max-width: 1024px;
+    margin: 20px 0px 100px 0px;
+}
+
+.headerList{
+    display: flex;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.headerListItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    color: #333;
+  }
+
+  .headerListItem.active{
+    border: 3px solid #333;
+    padding: 10px;
+    border-radius: 20px;
+
+  } 
+
+.headerTitle {
+  font-size: 2.5rem;
+  color: #333;
+  margin: 20px 0;
+}
+
+.headerDesc {
+  font-size: 1.30rem;
+  color: #555;
+  margin: 10px 0 20px;
+}
+
+.headerBt {
+    background-color: blue;
+    padding: 1%;
+    border-radius: 10px;
+    border-width: 1px;
+    background: transparent;
+    color: black;
+    cursor: pointer;
+}
+
+.headerBt:hover{
+    box-shadow: 0px 0px 5px 1px grey;
+}
+
