@@ -2,8 +2,13 @@ import React from 'react';
 import './headerr.css'; 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBus, faCar, faSuitcaseRolling, faCalendarDays } from '@fortawesome/free-solid-svg-icons';
+import { DateRange } from 'react-date-range';
+import { useState } from 'react';
+import 'react-date-range/dist/theme/default.css';
+import'react-date-range/dist/styles.css';
+import {format} from  "date-fns";
 
-function Header() {
+function Header({type}) {
   const handleBusClick = () => {
     // Handle Bus Trips click
     console.log('Bus Trips clicked');
@@ -13,10 +18,18 @@ function Header() {
     // Handle Car Rental click
     console.log('Car Rental clicked');
   };
+  const[openDate, setOpenDate] = useState(false)
+  const [date, setDate] = useState([
+    {
+      startDate: new Date(),
+      endDate: new Date(),
+      key: 'selection'
+    }
+  ]);
 
   return (
     <div className="Header">
-      <div className="headerContainer">
+      <div className= {type === "list" ? "headerContainer listMode" : "headerContainer"}>
         <div className="headerList">
           <button className="headerListItem active" onClick={handleBusClick}>
             <FontAwesomeIcon icon={faBus} />
@@ -26,8 +39,10 @@ function Header() {
             <FontAwesomeIcon icon={faCar} />
             <span>Car Rental Service</span>
           </button>
+
         </div> 
-        <h1 className="headerTitle">Book Your Bus Tickets and Car Rentals at the Best Prices</h1>
+        { type !== "list" &&
+          <><h1 className="headerTitle">Book Your Bus Tickets and Car Rentals at the Best Prices</h1>
         <p className="headerDesc">Choose the best option that suits your needs and budget!</p>
         <button className="headerBtn">Sign in / Register</button>
         <div className="headerSearch">
@@ -37,12 +52,19 @@ function Header() {
           </div>
           <div className="headerSearchItem">
             <FontAwesomeIcon icon={faCalendarDays} className="headerIcon" />
-            <span className="headerSearchText">Date to Date</span>
+            <span onClick={()=>setOpenDate(!openDate)} className="headerSearchText"> {format(date[0].startDate, "MM/dd/yyyy")} to {format(date[0].endDate, "MM/dd/yyyy")}</span>
+            {openDate && <DateRange
+              editableDateInputs={true}
+              onChange={item=> setDate([item.selection])}
+              moveRangeOnFirstSelection={false}
+              ranges={date}
+              className="date"
+             />}
           </div>
           <div className="headerSearchItem">
             <button className="headerBtn2">Search</button>
           </div>
-        </div>
+        </div></>}
       </div>
     </div>
   );

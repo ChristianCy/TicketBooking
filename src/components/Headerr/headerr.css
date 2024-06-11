@@ -9,7 +9,12 @@
 .headerContainer {
   width: 100%;
   max-width: 1024px;
-  margin: 20px 0 100px 0;
+  margin: 20px 0px 100px 0px;
+}
+
+.headerContainer.listMode{
+  margin: 20px 0px 0px 0px;
+
 }
 
 .headerList {
@@ -90,11 +95,12 @@
   align-items: center;
   justify-content: space-between;
   padding: 5px 0;
-  border-radius: 20px;
+  border-radius: 10px;
   position: absolute;
-  bottom: 25px;
+  bottom: -25px;
   width: 60%;
   background-color: white;
+  
 }
 
 .headerIcon {
@@ -106,6 +112,7 @@
   align-items: center;
   gap: 10px;
   padding: 5px;
+  cursor: pointer;
 }
 
 .headerSearchInput {
@@ -121,4 +128,12 @@
   display: flex;
   align-items: center;
   gap: 10px;
+}
+
+.date{
+position: absolute;
+top: 50px;
+z-index: 2;
+
+
 }
