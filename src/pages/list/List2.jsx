@@ -3,6 +3,7 @@ import './list2.css';
 import Navbar from '../../components/Navigationbar/navbar';
 import Header from '../../components/Headerr/header';
 import PvSearchItem from '../../components/pvsearchitem/Pvsearchitem';
+import Maillist from "../../components/mailList/maillist";
 
 function List2() {
   const [pickupLocation, setPickupLocation] = useState('');
@@ -25,6 +26,7 @@ function List2() {
     <div>
       <Navbar />
       <Header type="list" />
+      
       <div className="listContainer">
         <div className="listWrapper">
           <div className="listSearch">
@@ -103,6 +105,7 @@ function List2() {
           </div>
         </div>
       </div>
+      <Maillist/>
     </div>
   );
 }
