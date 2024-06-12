@@ -14,22 +14,22 @@
     object-fit: cover;
 }
 
-.siDesc{
+.siDescB{
     display: flex;
     flex-direction: column;
     gap: 10px;
 
 }
-.siTitle{
+.siTitleB{
     font-size: 20px;
     color: #0071c2;
 }
-.siDistance{
+.siDistanceB{
     font-size: 12px;
     font-weight: bold;
 }
 
-.siPackageOp{
+.siPackageOpB{
     font-size: 12px;
     background-color: #008009;
     color: white;
@@ -37,34 +37,34 @@
     border-radius: 5px;
 }
 
-.siCancelOp{
+.siCancelOpB{
     font-size: 12px;
     color: #008009;
     font-weight: bold;
 }
 
-.siCancelOpSubtitle{
+.siCancelOpSubtitleB{
     font-size: 12px;
     color: #008009;
 }
 
-.siDetails{
+.siDetailsB{
     flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.siRating{
+.siRatingB{
     display: flex;
     justify-content: space-between;
 }
 
-.siRating>span{
+.siRatingB>span{
     font-weight: 500;
 }
 
-.siRating>button{
+.siRatingB>button{
     background-color: #066af5;
     color: white;
     padding: 5px;
@@ -72,23 +72,23 @@
     border: none;
 }
 
-.siDetailTexts{
+.siDetailTextsB{
     text-align: right;
     display: flex;
     flex-direction: column;
     gap: 3px;
 }
 
-.siPrice{
+.siPriceB{
     font-size: 24px;
 }
 
-.siTaxOp{
+.siTaxOpB{
     font-size: 12px;
     color: gray;
 }
 
-.siCheckButton{
+.siCheckButtonB{
     background-color: #0071c2;
     color: white;
     font-weight: bold;

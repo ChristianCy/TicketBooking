@@ -7,15 +7,8 @@ import { useState } from "react";
 import { format } from "date-fns";
 import { DateRange } from "react-date-range";
 import SearchBus from "../../components/SearchBus/Searchbus";
-
-
-
-<<<<<<< Updated upstream
-function List() {
-  return (
-    <><><div><Navbar /><Header type="list" /></div><div><Feature></Feature></div></><div><Feature></Feature></div></>
-    
-=======
+import Maillist from "../../components/mailList/maillist";
+  
 const List = () => {
 
   const location= useLocation();
@@ -63,10 +56,10 @@ const List = () => {
             <SearchBus/>
             <SearchBus/>
           </div>
-        </div>
+        </div>      
       </div>
+      <Maillist />    
     </div>
->>>>>>> Stashed changes
   );
 };
 

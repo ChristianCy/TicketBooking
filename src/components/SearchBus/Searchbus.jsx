@@ -8,26 +8,25 @@ const SearchBus = () =>{
             alt="" 
             className="siImg"
             />
-            <div className="siDesc">
-                <h1 className="siTitle">Yaounde-Douala destination</h1>
-                <span className="siDistance">300km from douala</span>
-                <span className="siPackageOp">Free package compatiments</span>
-                <span className="siCancelOp">Free cancellation</span>
-                <span className="siCancelOpSubtitle">
+            <div className="siDescB">
+                <h1 className="siTitleB">Yaounde-Douala destination</h1>
+                <span className="siDistanceB">300km from douala</span>
+                <span className="siPackageOpB">Free package compatiments</span>
+                <span className="siCancelOpB">Free cancellation</span>
+                <span className="siCancelOpSubtitleB">
                     You can cancel later, so lock in this great price today!
                 </span>
             </div>
-            <div className="siDetails">
+            <div className="siDetailsB">
 
-                <div className="isRating">
+                <div className="isRatingB">
                     <span>Excellent</span>
                     <button>8.9</button>
                 </div>
-
-                <div className="siDetailTexts">
-                    <span className="siPrice">5000.0cfa</span>
-                    <span className="siTaxOp">Includes package fees</span>
-                    <button className="siCheckButton">See availability</button>
+                <div className="siDetailTextsB">
+                    <span className="siPriceB">5000.0cfa</span>
+                    <span className="siTaxOpB">Includes package fees</span>
+                    <button className="siCheckButtonB">See availability</button>
                 </div>
             </div>
         </div>

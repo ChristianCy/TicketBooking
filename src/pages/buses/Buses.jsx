@@ -4,6 +4,7 @@ import Navbar from "../../components/Navigationbar/navbar";
 import Header from "../../components/Headerr/header";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
+import Maillist from "../../components/mailList/maillist";
 
 function Buses() {
   const photos = [
@@ -79,6 +80,7 @@ function Buses() {
           </div>
         </div>
       </div>
+      <Maillist />
     </div>
   );
 };

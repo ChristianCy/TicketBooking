@@ -32,7 +32,43 @@ function ResetPassword() {
 
   return (
     <div>
-      <h1>ResetPassword</h1>
+      <div className={styles.resetPasswordContainer}>
+        <button className={styles.returnBtn} onClick={handleReturn}>Return</button>
+        <h1 className={styles.resetPasswordTitle}>Reset Password</h1>
+        <form onSubmit={handleSubmit} className={styles.resetPasswordForm}>
+          <div className={styles.formGroup}>
+            <label htmlFor="password" className={styles.formLabel}>New Password</label>
+            <div className={styles.iconContainer}>
+              <FontAwesomeIcon icon={faLock} className={styles.icon} />
+              <input
+                type="password"
+                id="password"
+                name="password"
+                value={formData.password}
+                onChange={handleChange}
+                required
+                className={styles.formInput}
+              />
+            </div>
+          </div>
+          <div className={styles.formGroup}>
+            <label htmlFor="confirmPassword" className={styles.formLabel}>Confirm Password</label>
+            <div className={styles.iconContainer}>
+              <FontAwesomeIcon icon={faLock} className={styles.icon} />
+              <input
+                type="password"
+                id="confirmPassword"
+                name="confirmPassword"
+                value={formData.confirmPassword}
+                onChange={handleChange}
+                required
+                className={styles.formInput}
+              />
+            </div>
+          </div>
+          <button type="submit" className={styles.resetPasswordBtn}>Reset Password</button>
+        </form>
+      </div>
     </div>
   );
 }
