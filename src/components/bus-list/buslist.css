@@ -20,3 +20,19 @@ object-fit: cover;
 
 
 }
+.BlistTitles> h1{
+ font-size: 16px;
+ color: rgb(101, 136, 49);
+ 
+ 
+}
+
+.BlistTitles> h2{
+    font-size: 16px;
+    color: rgba(166, 31, 31, 0.659);
+}
+
+.BlistTitles> h3{
+    font-size: 14px;
+    color: rgb(54, 47, 184);
+}
