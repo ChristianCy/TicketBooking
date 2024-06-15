@@ -36,12 +36,12 @@ public class LocationController {
 	}
 
 	@GetMapping("/fetch")
-	public ResponseEntity<LocationResponseDto> getLocationById(@RequestParam("locationId") int locatonId) {
+	public ResponseEntity<LocationResponseDto> getLocationById(@RequestParam("locationId") int locationId) {
 
 		// add the logger here
 		System.out.println("request");
 
-		return locationResource.getLocationById(locatonId);
+		return locationResource.getLocationById(locationId);
 
 	}
 	
@@ -66,12 +66,12 @@ public class LocationController {
 	}
 
 	@DeleteMapping("/delete")
-	public ResponseEntity<CommonApiResponse> deleteLocation(@RequestParam("locatonId") int locatonId) {
+	public ResponseEntity<CommonApiResponse> deleteLocation(@RequestParam("locationId") int locationId) {
 
 		// add the logger here
 		System.out.println("request");
 
-		return locationResource.deleteLocationById(locatonId);
+		return locationResource.deleteLocationById(locationId);
 
 	}
 	
