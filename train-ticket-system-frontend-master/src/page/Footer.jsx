@@ -150,8 +150,8 @@ const Footer = () => {
 
           <div class="text-center">
             © 2022 Copyright:
-            <a class="text-color-3" href="https://codewithmurad.com/">
-              codewithmurad.com
+            <a class="text-color-3" href="https://github.com/ChristianCy/TicketBooking.git">
+              ticketapp.com
             </a>
           </div>
         </footer>
